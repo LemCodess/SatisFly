@@ -49,12 +49,12 @@
 
 ### 5. Models Used
 
-| Model         | Accuracy | Precision | Recall | F1 Score | AUC  |
-| ------------- | -------- | --------- | ------ | -------- | ---- |
-| Random Forest | 96.25%   | 96.28%    | 96.25% | 96.24%   | 0.99 |
-| Decision Tree | 94.52%   | 94.52%    | 94.52% | 94.52%   | 0.94 |
-| KNN           | 93.32%   | 93.39%    | 93.32% | 93.29%   | 0.97 |
-| SVM           | 87.01%   | 87.00%    | 87.01% | 86.98%   | 0.92 |
+| Model         | Accuracy | Precision | Recall | F1 Score |
+| ------------- | -------- | --------- | ------ | -------- |
+| Random Forest | 96.17%   | 96.20%    | 96.17% | 96.17%   |
+| Decision Tree | 94.67%   | 94.67%    | 94.67% | 94.67%   |
+| KNN           | 93.32%   | 93.39%    | 93.32% | 93.29%   |
+| SVM           | 87.04%   | 87.03%    | 87.04% | 87.01%   |
 
 > **Best Performer**: Random Forest Classifier
 
@@ -63,7 +63,6 @@
 ## Evaluation Metrics
 
 - **Confusion Matrices**
-- **ROC Curves** with AUC
 - **Bar Charts** comparing:
   - Accuracy
   - Precision (per class)
@@ -77,7 +76,20 @@
 ```bash
 pip install -r requirements.txt
 ```
+## How to run
+**Option 1**
+1. Open the notebook file (SatisFly.ipynb) in Jupyter Notebook or VS Code.
 
+2. Run all cells sequentially to execute data preprocessing, model training, and evaluation.
+
+3. View the output visualizations (correlation heatmap, PCA plots, confusion matrices, etc.) directly in the notebook.
+
+**Option 2**
+Run the Streamlit app
+
+```bash
+streamlit run app.py
+```
 ## Key Insights
 
 Online services (Online boarding, Inflight entertainment) are most correlated with satisfaction.
